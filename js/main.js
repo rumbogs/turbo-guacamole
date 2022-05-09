@@ -17,6 +17,7 @@ const handleStart = (ev) => {
         const utterThis = new SpeechSynthesisUtterance(currentEmoji);
         utterThis.lang = 'ro-RO';
         utterThis.voice = voices.find(voice => voice.lang === 'ro-RO');
+        synth.cancel();
         synth.speak(utterThis);
     }
 }
