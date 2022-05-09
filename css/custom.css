@@ -9,7 +9,7 @@ body {
 
 .current-emoji-wrapper{
     display: flex;
-    flex: 1.5;
+    flex: 2;
     width: 85vw;
     margin-top: 40px;
     align-items: center;
@@ -24,7 +24,7 @@ body {
 }
 
 .emoji-list-wrapper {
-    flex: 2;
+    flex: 3;
     height: 100%;
     margin: 20px;
     overflow: scroll;
@@ -42,5 +42,5 @@ body {
     background: transparent;
     border: none;
     padding: 5px;
-    font-size: 22px;
+    font-size: 35px;
 }
