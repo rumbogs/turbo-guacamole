@@ -1,4 +1,4 @@
-import emojis from '../emojis-en-v14.0.json';
+import emojis from './emojis-en-v14.0.json';
 
 const synth = window.speechSynthesis;
 
