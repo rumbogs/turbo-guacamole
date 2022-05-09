@@ -182,6 +182,7 @@ var handleStart = function handleStart(ev) {
     utterThis.voice = voices.find(function (voice) {
       return voice.lang === 'ro-RO';
     });
+    synth.cancel();
     synth.speak(utterThis);
   }
 };
@@ -231,7 +232,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54617" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60185" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
